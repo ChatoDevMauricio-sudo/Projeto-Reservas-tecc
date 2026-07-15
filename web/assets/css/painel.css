@@ -1,0 +1,162 @@
+/* ==========================================================
+   PAINEL PÚBLICO — estilo próprio (tela de TV/monitor)
+   Reaproveita a mesma paleta de cores do assets/css/style.css
+   para manter a identidade visual do sistema.
+   ========================================================== */
+
+:root {
+    --azul: #315f8f;
+    --azul-escuro: #244a72;
+    --verde: #2f855a;
+    --verde-escuro: #276749;
+    --vermelho: #d64545;
+    --vermelho-escuro: #b83232;
+    --slate-900: #172033;
+    --slate-800: #263247;
+    --slate-600: #55657a;
+    --slate-500: #718095;
+    --fundo: #f4f6f8;
+    --branco: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(180deg, #f8fafc 0%, var(--fundo) 220px);
+    color: var(--slate-800);
+    line-height: 1.45;
+}
+
+.header-painel {
+    background: var(--azul-escuro);
+    text-align: center;
+    padding: 22px 25px 18px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, .25);
+}
+
+.header-painel h1 {
+    font-size: 2.4rem;
+    letter-spacing: 1.5px;
+    color: var(--branco);
+}
+
+.turno-atual {
+    margin-top: 8px;
+    font-size: 1rem;
+    color: #d5deea;
+}
+
+/* Grid responsivo: se adapta ao número de recursos cadastrados */
+.painel {
+    width: 100%;
+    max-width: 1400px;
+    margin: 30px auto;
+    padding: 0 25px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 25px;
+    flex: 1;
+}
+
+.vazio {
+    text-align: center;
+    width: 100%;
+    padding: 40px;
+    color: var(--slate-600);
+    font-size: 1.2rem;
+}
+
+.card-painel {
+    border-radius: 15px;
+    padding: 25px;
+    text-align: center;
+    transition: transform .3s ease;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, .30);
+}
+
+.card-painel:hover {
+    transform: scale(1.03);
+}
+
+.numero {
+    font-size: 55px;
+    font-weight: bold;
+}
+
+.nome {
+    margin-top: 12px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.setor {
+    margin-top: 6px;
+    font-size: 14px;
+    opacity: .85;
+}
+
+.status {
+    margin-top: 18px;
+    font-size: 22px;
+    font-weight: bold;
+    background: rgba(255, 255, 255, .2);
+    padding: 12px;
+    border-radius: 10px;
+}
+
+.reservado-por {
+    margin-top: 10px;
+    font-size: 13px;
+    opacity: .9;
+}
+
+.numero,
+.nome,
+.setor,
+.status,
+.reservado-por {
+    color: var(--branco);
+}
+
+/* Status: recurso disponível */
+.livre {
+    background: var(--verde);
+}
+
+/* Status: recurso em uso (reserva ativa no turno atual) */
+.ocupado {
+    background: var(--vermelho);
+}
+
+.footer-painel {
+    text-align: center;
+    padding: 18px;
+    font-size: 15px;
+    color: var(--slate-600);
+}
+
+@media (max-width: 600px) {
+    .header-painel h1 {
+        font-size: 1.8rem;
+    }
+
+    .numero {
+        font-size: 42px;
+    }
+
+    .nome {
+        font-size: 18px;
+    }
+
+    .status {
+        font-size: 18px;
+    }
+}

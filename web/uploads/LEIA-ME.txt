@@ -1,0 +1,2 @@
+As fotos dos recursos enviadas pelo formulário do admin são salvas nesta pasta.
+Mantenha esta pasta com permissão de escrita.
