@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="azul">#2563EB</color>
+    <color name="azul_escuro">#1E293B</color>
+    <color name="branco">#FFFFFF</color>
+    <color name="cinza">#64748B</color>
+    <color name="fundo">#F4F6F9</color>
+    <color name="preto">#2C3E50</color>
+    <color name="verde">#16A34A</color>
+    <string name="app_name">Reservas Escola</string>
+    <style name="Theme.ReservasApp" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/azul</item>
+        <item name="colorPrimaryVariant">@color/azul_escuro</item>
+        <item name="colorOnPrimary">@color/branco</item>
+        <item name="colorSecondary">@color/verde</item>
+        <item name="android:statusBarColor">@color/azul_escuro</item>
+    </style>
+</resources>

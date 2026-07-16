@@ -1,0 +1,9 @@
+<resources>
+    <color name="azul">#2563EB</color>
+    <color name="azul_escuro">#1E293B</color>
+    <color name="verde">#16A34A</color>
+    <color name="cinza">#64748B</color>
+    <color name="fundo">#F4F6F9</color>
+    <color name="branco">#FFFFFF</color>
+    <color name="preto">#2C3E50</color>
+</resources>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fundo">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imgDetalhe"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:scaleType="centerCrop"
+            android:background="@color/azul_escuro"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="18dp">
+
+            <TextView
+                android:id="@+id/txtNomeDet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nome"
+                android:textColor="@color/preto"
+                android:textSize="22sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/txtCategoriaDet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Categoria"
+                android:textColor="@color/azul"
+                android:textSize="14sp"
+                android:layout_marginTop="2dp"/>
+
+            <TextView
+                android:id="@+id/txtDescricao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Descrição"
+                android:textColor="@color/preto"
+                android:textSize="15sp"
+                android:layout_marginTop="12dp"/>
+
+            <TextView
+                android:id="@+id/txtSetor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Setor responsável"
+                android:textColor="@color/cinza"
+                android:textSize="14sp"
+                android:layout_marginTop="10dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#E2E8F0"
+                android:layout_marginVertical="16dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Fazer reserva"
+                android:textStyle="bold"
+                android:textSize="17sp"
+                android:textColor="@color/preto"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Data:"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:id="@+id/txtData"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Toque para escolher a data"
+                android:padding="12dp"
+                android:background="@color/branco"
+                android:textColor="@color/azul"
+                android:layout_marginTop="4dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Turno:"
+                android:layout_marginTop="12dp"/>
+
+            <Spinner
+                android:id="@+id/spinnerTurno"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/branco"
+                android:layout_marginTop="4dp"/>
+
+            <Button
+                android:id="@+id/btnReservar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Confirmar Reserva"
+                android:backgroundTint="@color/verde"
+                android:layout_marginTop="18dp"/>
+
+            <ProgressBar
+                android:id="@+id/progressDet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                android:layout_marginTop="10dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

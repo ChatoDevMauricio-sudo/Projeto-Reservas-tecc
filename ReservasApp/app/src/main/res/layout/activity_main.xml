@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/fundo">
+
+    <!-- Topo -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/azul_escuro"
+        android:padding="14dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/txtSaudacao"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Olá"
+            android:textColor="@color/branco"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/btnHistorico"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Histórico"
+            android:textSize="12sp"
+            android:backgroundTint="@color/azul"/>
+
+        <Button
+            android:id="@+id/btnSair"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sair"
+            android:textSize="12sp"
+            android:layout_marginStart="6dp"
+            android:backgroundTint="@color/cinza"/>
+    </LinearLayout>
+
+    <!-- Busca -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="12dp">
+
+        <EditText
+            android:id="@+id/edBusca"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Buscar recurso..."
+            android:background="@color/branco"
+            android:padding="10dp"/>
+
+        <Button
+            android:id="@+id/btnBuscar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Buscar"
+            android:backgroundTint="@color/azul"/>
+    </LinearLayout>
+
+    <!-- Filtro por categoria -->
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:paddingHorizontal="12dp">
+
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/chipGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:singleLine="true"
+            app:singleSelection="true"/>
+    </HorizontalScrollView>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerRecursos"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="8dp"/>
+
+        <ProgressBar
+            android:id="@+id/progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/txtVazio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Nenhum recurso encontrado."
+            android:textColor="@color/cinza"
+            android:visibility="gone"/>
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,34 @@
+[
+    {
+        "merged": "com.escola.reservasapp-merged_res-33:/layout_activity_main.xml.flat",
+        "source": "com.escola.reservasapp-main-35:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.escola.reservasapp-merged_res-33:/drawable_ic_placeholder.xml.flat",
+        "source": "com.escola.reservasapp-main-35:/drawable/ic_placeholder.xml"
+    },
+    {
+        "merged": "com.escola.reservasapp-merged_res-33:/layout_activity_detalhes.xml.flat",
+        "source": "com.escola.reservasapp-main-35:/layout/activity_detalhes.xml"
+    },
+    {
+        "merged": "com.escola.reservasapp-merged_res-33:/layout_activity_login.xml.flat",
+        "source": "com.escola.reservasapp-main-35:/layout/activity_login.xml"
+    },
+    {
+        "merged": "com.escola.reservasapp-merged_res-33:/layout_item_reserva.xml.flat",
+        "source": "com.escola.reservasapp-main-35:/layout/item_reserva.xml"
+    },
+    {
+        "merged": "com.escola.reservasapp-merged_res-33:/drawable_ic_launcher.xml.flat",
+        "source": "com.escola.reservasapp-main-35:/drawable/ic_launcher.xml"
+    },
+    {
+        "merged": "com.escola.reservasapp-merged_res-33:/layout_item_recurso.xml.flat",
+        "source": "com.escola.reservasapp-main-35:/layout/item_recurso.xml"
+    },
+    {
+        "merged": "com.escola.reservasapp-merged_res-33:/layout_activity_historico.xml.flat",
+        "source": "com.escola.reservasapp-main-35:/layout/activity_historico.xml"
+    }
+]
